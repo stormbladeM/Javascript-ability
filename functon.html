@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+    function getSoft(name = "stranger"){
+      return 'goodmorning ' + name;
+    }
+    getSoft('sodiq');
+    console.log(getSoft('sodiq'));
+    //  return option
+    function myKettle(name1 = 'victor', name2 = 'israel'){
+    const Age = 13;
+    const aSinner = true;
+    if (!myKettle){
+      return 'you can still come back to your lord ' + name1;
+    }else if(myKettle && Age != 13){
+      return name2 + ' you are still young boy';
+    }else{
+      return 'you are very stupid';
+    }
+    }
+    myKettle();
+    console.log(myKettle());
+    // function of a function
+
+    function getKelvin(number){
+      return number * (9/5);
+    }
+    function getFahrenheit(number){
+      return getKelvin(number) + 32;
+    }
+    console.log(getFahrenheit(32));
+    let weekDays = "Tuesday";
+    switch(weekDays){
+      case "Monday":
+        console.log('first day of the monday');
+        break;
+        case "Tuesday":
+        console.log('second day of the week');
+        break;
+        case "Wednesday":
+        console.log('mid-week');
+        break;
+        case "Thursday":
+        console.log('its thursday');
+        break;
+        case "Friday":
+        console.log('its jumah day');
+        break;
+        case "saturday":
+        console.log('its weekend');
+        break;
+    }
+    const getOut = (name = "sodiq") => {
+      return 'Goodmorning ' + name ;
+    }
+    getOut("uthman");
+    console.log(getOut("uthman"));
+    let weekend = true;
+    weekend ===true ? console.log('it\'s the weekend') : console.log('it\'s week days');
+  </script>
+</body>
+</html>

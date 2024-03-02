@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
+
+
+  <script>
+    const kelvin = 32;
+    const celsius = kelvin - 273;
+    let fahrenheit = celsius *(9/5) + 32;
+    fahrenheit = Math.floor(fahrenheit);
+    console.log(`The conversion of kelvin :${kelvin} to celsius : ${celsius}`);
+    console.log(`The conversion from kelvin(32k) to fahrenheit is = ${fahrenheit}`);
+
+    //eightBall
+    let randomNumber = Math.floor(Math.random()*8);
+    let myPick = 2;
+    myPick === 2 && randomNumber >4 ?
+      console.log('We are so luck to have you here') :
+      console.log('thanks! try again next time');
+      // switch
+      let Day = new Date().getDay();
+      //let Day = Math.floor(Math.random()*8)
+      switch(Day){
+          case 1:
+          console.log('Monday');
+          break;
+          case 2:
+          console.log('Tuesday');
+          break;
+          case 3:
+          console.log('Wednesday');
+          break;
+          case 4:
+          console.log('Thursday');
+          break;
+          case 5:
+          console.log('Friday');
+          break;
+          case 6:
+          console.log('Saturday');
+          break;
+          case 0:
+          console.log('sunday');
+          break;
+      }
+      // boooleanz
+      let runner = Math.ceil(Math.random()* 20);
+      const Age = 17;
+      let registeredEarly = true;
+      if ( Age > 18 && registeredEarly && runner >10){
+        console.log(`your match starts at 9:00am. Runner: ${runner += 2}`);
+      }else if( Age < 18 && registeredEarly && runner <10){
+        console.log(`your match starts at 12:00pm. Runner: ${runner += 3}`);
+      }else {
+        console.log('you are disqualified');
+      }
+  </script>
+</body>
+</html>
